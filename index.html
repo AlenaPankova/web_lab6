@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Index page from lab4{% endblock %}
+
+{% block head %}
+    {% for style in styles %}
+        <link rel="stylesheet" href="/_static/{{ style }}"/>
+    {% endfor %}
+{% endblock %}
+
+{% block body %}
+    {% for javascript in javascripts %}
+        <script src="/_static/{{ javascript }}"></script>
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+    Index
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}{% endblock %} - Pankova Alena</title>
+    <meta charset="utf-8">
+    {% block head %}
+        
+    {% endblock %}
+</head>
+<body>
+    <p>
+        <b>Bold text, <i>bold and italic text</i></b>
+    </p>
+    {% block body %}
+
+    {% endblock %}
+    
+    <footer>{% block footer %}{% endblock %} - Powered by Alenka</footer>
+</body>
+</html>
